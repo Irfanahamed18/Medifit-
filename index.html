@@ -1,0 +1,679 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medifit - Your Trusted Healthcare Partner</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <div class="wrapper">
+    <div class="content">
+    <div class="container">
+        <header class="header">
+            <div class="logo-section">
+                <img src="assets/images/img_logo_2.svg" alt="Medifit Logo" class="logo" />
+                <h1 class="brand-name">Medifit</h1>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            
+            <div class="header-actions">
+                <img src="assets/images/img_search.svg" alt="Search" class="search-icon" onclick="toggleSearch()" />
+                <div class="cart-container">
+                    <img src="assets/images/img_cart.svg" alt="Cart" class="cart-icon" onclick="toggleCart()" />
+                    <span class="cart-badge">0</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2 class="hero-title">Your trusted care now and always</h2>
+                <p class="hero-description">For the best results, align your health needs with your medication plan.</p>
+                <button class="cta-button" onclick="shopNow()">Shop now</button>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="hero-circle"></div>
+                <img src="assets/images/Group 220.jpg"/>
+        </section>
+
+        <section class="category-section">
+            <h2 class="section-title">Shop by Category</h2>
+            
+            <div class="category-grid">
+                <div class="category-card" onclick="navigateToCategory('medicine')">
+                    <div class="category-icon-wrapper">
+                        <div class="category-icon-bg">
+                            <img src="assets/images/img_capsule.svg" alt="Medicine" class="category-icon" />
+                        </div>
+                    </div>
+                    <h3 class="category-name">Medicine</h3>
+                    <p class="category-count">32 Items</p>
+                </div>
+                
+                <div class="category-card" onclick="navigateToCategory('healthcare')">
+                    <div class="category-icon-wrapper">
+                        <div class="category-icon-bg">
+                            <img src="assets/images/img_heart.svg" alt="Health care" class="category-icon" />
+                        </div>
+                    </div>
+                    <h3 class="category-name">Health care</h3>
+                    <p class="category-count">20 Items</p>
+                </div>
+                
+                <div class="category-card" onclick="navigateToCategory('beauty')">
+                    <div class="category-icon-wrapper">
+                        <div class="category-icon-bg">
+                            <img src="assets/images/img_leaf.svg" alt="Beauty care" class="category-icon" />
+                        </div>
+                    </div>
+                    <h3 class="category-name">Beauty care</h3>
+                    <p class="category-count">30 Items</p>
+                </div>
+                
+                <div class="category-card" onclick="navigateToCategory('fitness')">
+                    <div class="category-icon-wrapper">
+                        <div class="category-icon-bg">
+                            <img src="assets/images/img_heartbeat.svg" alt="Fitness" class="category-icon" />
+                        </div>
+                    </div>
+                    <h3 class="category-name">Fitness</h3>
+                    <p class="category-count">35 Items</p>
+                </div>
+                
+                <div class="category-card" onclick="navigateToCategory('lab-equipment')">
+                    <div class="category-icon-wrapper">
+                        <div class="category-icon-bg">
+                            <img src="assets/images/img_vials.svg" alt="Lab equipment" class="category-icon" />
+                        </div>
+                    </div>
+                    <h3 class="category-name">Lab equipment</h3>
+                    <p class="category-count">25 Items</p>
+                </div>
+                
+                <div class="category-card" onclick="navigateToCategory('medkits')">
+                    <div class="category-icon-wrapper">
+                        <div class="category-icon-bg">
+                            <img src="assets/images/img_briefcasemedicalplus.svg" alt="Medkits" class="category-icon" />
+                        </div>
+                    </div>
+                    <h3 class="category-name">Medkits</h3>
+                    <p class="category-count">25 Items</p>
+                </div>
+            </div>
+        </section>
+
+       <section class="promo-section">
+  <div class="promo-card">
+    <div class="promo-content">
+      <span class="promo-badge">Sanitizer</span>
+      <h3 class="promo-title">Hand sanitizer collection</h3>
+      <a href="#" class="promo-cta" onclick="shopCategory('sanitizer')">
+        <img src="assets/images/img_bagshopping.svg" class="promo-cta-icon" />
+        Shop now
+      </a>
+    </div>
+    <img src="assets/images/img_realistichandsanitizerbottle3dstyle_1.png" class="promo-image" />
+  </div>
+
+  <div class="promo-card">
+    <div class="promo-content">
+      <span class="promo-badge">Top deals</span>
+      <h3 class="promo-title">Face wash sale collection</h3>
+      <a href="#" class="promo-cta" onclick="discoverDeals()">
+        <img src="assets/images/img_eye.svg" class="promo-cta-icon" />
+        Discover now
+      </a>
+    </div>
+    <img src="assets/images/img_rb2147639108_1.png" class="promo-image" />
+  </div>
+
+  <div class="promo-card">
+    <div class="promo-content">
+      <span class="promo-badge">Face mask</span>
+      <h3 class="promo-title">Facial mask deals save up to 50%</h3>
+      <a href="#" class="promo-cta" onclick="discoverMasks()">
+        <img src="assets/images/img_eye.svg" class="promo-cta-icon" />
+        Discover now
+      </a>
+    </div>
+    <img src="assets/images/img_realisticmedicalmaskwithshadows_1.png" class="promo-image" />
+  </div>
+</section>
+<section class="recent-products">
+  <h2>Latest Health Product</h2>
+  <div class="product-grid">
+
+    <div class="product-card">
+      <div class="product-top">
+        <span class="badge">New</span>
+        <img src="shopimg/download 2.png" alt="Microscope">
+        <button class="shop-now">Shop now</button>
+      </div>
+      <h3>Microscope</h3>
+      <p class="price">$45.00 <span class="currency">USD</span></p>
+    </div>
+
+    <div class="product-card">
+      <div class="product-top">
+        <span class="badge discount">Save 10%</span>
+        <img src="shopimg/sleek-pulse-oximeter-with-soft-ambient-lighting.png" alt="Pulse oximeter">
+        <button class="shop-now">Shop now</button>
+      </div>
+      <h3>Pulse oximeter</h3>
+      <p class="price">
+        $19.00 <span class="currency">USD</span>
+        <span class="original-price">$25.00 USD</span>
+      </p>
+    </div>
+
+    <div class="product-card">
+      <div class="product-top">
+        <img src="shopimg/Group 161.png" alt="Vitamin serum">
+        <button class="shop-now">Shop now</button>
+      </div>
+      <h3>Vitamin serum</h3>
+      <p class="price">
+        $20.00 <span class="currency">USD</span>
+        <span class="original-price">$30.00 USD</span>
+      </p>
+    </div>
+
+    <div class="product-card">
+      <div class="product-top">
+        <span class="badge">New</span>
+        <img src="shopimg/Group 162.png" alt="High protein">
+        <button class="shop-now">Shop now</button>
+      </div>
+      <h3>High protein</h3>
+      <p class="price">$50.00 <span class="currency">USD</span></p>
+    </div>
+       
+        <section class="features-section">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon-wrapper">
+                        <img src="assets/images/img_shieldcheck.svg" alt="Warranty" class="feature-icon" />
+                    </div>
+                    <div class="feature-content">
+                        <h3>30 Days warranty</h3>
+                        <p>Enjoy peace of mind with warranty</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon-wrapper">
+                        <img src="assets/images/img_arrowleftarrowright.svg" alt="Exchange" class="feature-icon" />
+                    </div>
+                    <div class="feature-content">
+                        <h3>Exchange policy</h3>
+                        <p>You're satisfied with your purchase</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon-wrapper">
+                        <img src="assets/images/img_creditcard.svg" alt="Payment" class="feature-icon" />
+                    </div>
+                    <div class="feature-content">
+                        <h3>Secure payment</h3>
+                        <p>Shop with confidence every time</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="store-section">
+            <h2 class="section-title">Explore Our store Collection</h2>
+            
+            <div class="store-grid">
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="assets/images/img_medicinead_1.png" alt="B12 Medicine" class="product-image" />
+                        <div style="position: absolute; bottom: 20px; left: 20px; display: flex; gap: 10px;">
+                           
+                        </div>
+                    </div>
+                    <h3 class="product-name">B12 medicine</h3>
+                    <div class="product-price">
+                        <span class="current-price">$19.00 USD</span>
+                        <span class="original-price">$25.00 USD</span>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="assets/images/img_medicaldevicesettonometerglucometerbloodglucosemeterpulseoximeterecgelectrocardiographhealthcareequipmentcollection_2.png" alt="Tonometer" class="product-image" />
+                    </div>
+                    <h3 class="product-name">Tonometer</h3>
+                    <div class="product-price">
+                        <span class="current-price">$19.00 USD</span>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="assets/images/img_medicaldevicesettonometerglucometerbloodglucosemeterpulseoximeterecgelectrocardiographhealthcareequipmentcollection_1.png" alt="ECG Cardiograph" class="product-image" />
+                    </div>
+                    <h3 class="product-name">ECG cardiograph</h3>
+                    <div class="product-price">
+                        <span class="current-price">$20.00 USD</span>
+                        <span class="original-price">$35.00 USD</span>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="assets/images/img_medicaldevicesettonometerglucometerbloodglucosemeterpulseoximeterecgelectrocardiographhealthcareequipmentcollection_3.png" alt="Blood Glucose Meter" class="product-image" />
+                    </div>
+                    <h3 class="product-name">Blood glucose meter</h3>
+                    <div class="product-price">
+                        <span class="current-price">$15.00 USD</span>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="assets/images/img_medicalprotectiveglovesstyle.png" alt="Lab Hand Gloves" class="product-image" />
+                    </div>
+                    <h3 class="product-name">Lab hand gloves</h3>
+                    <div class="product-price">
+                        <span class="current-price">$20.00 USD</span>
+                        <span class="original-price">$35.00 USD</span>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="assets/images/img_healthcareconceptmedicalbackgroundwithstethoscopestethoscopemedicalstethoscopeequipmentmedicinestethoscopeillustration_1.png" alt="Stethoscope" class="product-image" />
+                    </div>
+                    <h3 class="product-name">Stethoscope</h3>
+                    <div class="product-price">
+                        <span class="current-price">$20.00 USD</span>
+                        <span class="original-price">$35.00 USD</span>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="assets/images/img_blueasthmainhaleragainstwhitebackground_1.png" alt="Inhaler Pressure Drop" class="product-image" />
+                    </div>
+                    <h3 class="product-name">Inhaler pressure drop</h3>
+                    <div class="product-price">
+                        <span class="current-price">$35.00 USD</span>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="assets/images/img_bottlepillswithwhitelabelthatsaysnopills_1.png" alt="Multi Vitamin" class="product-image" />
+                        <div style="position: absolute; bottom: 20px; left: 20px;">
+                            
+                        </div>
+                    </div>
+                    <h3 class="product-name">Multi vitamin</h3>
+                    <div class="product-price">
+                        <span class="current-price">$20.00 USD</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="newsletter-section">
+                <div class="newsletter-image">
+                    <img src="assets/images/img_youngwomantakingdietarysupplementvitaminomega3healthfishoilsoftgelvitamindvitamincsupportimmunitydiseaseprevention_1.png" alt="Newsletter Image" />
+                </div>
+                
+                <div class="newsletter-content">
+  <p class="newsletter-subtitle">Join our newsletter</p>
+  <h2 class="newsletter-title">Sign Up for an Instant<br>15% Discount</h2>
+
+  <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+    <div class="email-wrapper">
+      <img src="assets/images/img_fi11502423.svg" alt="Email Icon" class="email-icon" />
+      <input type="email" class="email-input" placeholder="Enter Email" required />
+    </div>
+    <button type="submit" class="signup-btn">
+      <img src="assets/images/signup.png" alt="Sign up icon" class="signup-icon" />
+      Sign up
+    </button>
+  </form>
+</div>
+
+            </div>
+        </section>
+        <section class="testimonials-section">
+            <h2 class="section-title">Our happy clients</h2>
+            
+            <div class="testimonial-card">
+                <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px;">
+                    <img src="assets/images/img_fi11029023.svg" alt="Quote" style="width: 109px; height: 109px;" />
+                </div>
+                
+                <p class="testimonial-text">
+                    I'm so impressed with this online medical store. The product selection is extensive and the prices are great. I found everything i needed in one place. The ordering process was easy, delivery was prompt, and the items arrived in perfect condition. Plus, the customer service team was incredibly helpful.
+                </p>
+            </div>
+            
+            <div class="testimonial-authors">
+                <div class="author-item">
+                    <div class="author-avatar">
+                        <img src="assets/images/img_manwithhisarmscrossedsmiling_4.png" alt="James Wilson" />
+                    </div>
+                    <div class="author-info">
+                        <h4>James Wilson</h4>
+                        <p>Manager</p>
+                    </div>
+                </div>
+                
+                <div class="author-item">
+                    <div class="author-avatar">
+                        <img src="assets/images/img_manwithbeardshirtthatsaysheissmiling_1.png" alt="Henry Adams" />
+                    </div>
+                    <div class="author-info">
+                        <h4>Henry Adams</h4>
+                        <p>CEO</p>
+                    </div>
+                </div>
+                
+                <div class="author-item">
+                    <div class="author-avatar">
+                        <img src="assets/images/img_satisfiedcharmingmanwithbristleholdingsmartphonenearchest_1.png" alt="Ethan Harris" />
+                    </div>
+                    <div class="author-info">
+                        <h4>Ethan Harris</h4>
+                        <p>Business manager</p>
+                    </div>
+                </div>
+                
+                <div class="author-item">
+                    <div class="author-avatar">
+                        <img src="assets/images/img_girl_1.png" alt="Lily Baker" />
+                    </div>
+                    <div class="author-info">
+                        <h4>Lily Baker</h4>
+                        <p>Product manager</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-section">
+            <h2 class="section-title">Follow us @medifit</h2>
+            
+            <div class="social-grid">
+                <div class="social-item">
+                    <img src="assets/images/img_frontcloseviewsickyoungfemalefeelingveryilltakingpillswhitesurface_2.png" alt="Social Post 1" />
+                </div>
+                
+                <div class="social-item" style="background: linear-gradient(rgba(80, 50, 23, 0.46), rgba(80, 50, 23, 0.46)); border-radius: 60px 60px 10px 10px;">
+                    <img src="assets/images/img_capsuleherbalmedicinewithstethoscopewoodenbackground_1.png" alt="Social Post 2" style="border-radius: 60px 60px 10px 10px;" />
+                    <div class="social-overlay">
+                    </div>
+                </div>
+                
+                <div class="social-item" style="border-radius: 150px;">
+                    <img src="assets/images/img_pillboxarrangementstilllife_1.png" alt="Social Post 3" style="border-radius: 150px;" />
+                </div>
+                
+                <div class="social-item" style="border-radius: 151px 151px 10px 10px;">
+                    <img src="assets/images/img_pillspremiumstockphotoflatbackground_1.png" alt="Social Post 4" style="border-radius: 151px 151px 10px 10px;" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+        
+
+       <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Pages</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#privacy">Privacy policy</a></li>
+                        <li><a href="#faqs">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Utility</h3>
+                    <ul>
+                        <li><a href="#style-guide">Style guide</a></li>
+                        <li><a href="#instruction">Instruction</a></li>
+                        <li><a href="#changelog">Changelog</a></li>
+                        <li><a href="#licenses">Licenses</a></li>
+                        <li><a href="#link-in-bio">Link in bio</a></li>
+                        <li><a href="#error-404">Error 404</a></li>
+                        <li><a href="#password-protected">Password protected</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <div class="footer-brand">
+                        <img src="assets/images/img_group_123.svg" alt="Medifit Logo" />
+                        <span class="footer-brand-name">Medifit</span>
+                    </div>
+                    
+                    <p class="footer-description">
+                        We provides the ultimate solution<br> for your online store and all the<br> healthcare needs.
+                    </p>
+                    
+                    <div class="social-links">
+                        <a href="#facebook" class="social-link">
+                            <img src="assets/images/img_facebook.svg" alt="Facebook" />
+                        </a>
+                        <a href="#instagram" class="social-link">
+                            <img src="assets/images/img_group_14.svg" alt="Instagram" />
+                        </a>
+                        <a href="#twitter" class="social-link">
+                            <img src="assets/images/img_x304twitter.svg" alt="Twitter" />
+                        </a>
+                        <a href="#youtube" class="social-link">
+                            <img src="assets/images/img_youtube.svg" alt="YouTube" />
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Address</h3>
+                    <div class="contact-info">
+                        <img src="assets/images/img_locationpin2.svg" alt="Location" />
+                        <span>1640 Parker Rd. Allentown, New Mexico 31134</span>
+                    </div>
+                    
+                    <h3 style="margin-top: 30px;">Contact</h3>
+                    <div class="contact-info">
+                        <img src="assets/images/img_fi11502423_gray_800.svg" alt="Email" />
+                        <span>hello@gmail.com</span>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <img src="assets/images/img_fi2198371.svg" alt="Phone" />
+                        <span>(209) 555-0104</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <p>Design By <a href="#webestica">Webestica</a>, Powered By <a href="#webflow">Webflow</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        let cartCount = 0;
+        const cartItems = [];
+
+        function toggleSearch() {
+            alert('Search functionality would open here');
+        }
+
+        function toggleCart() {
+            if (cartItems.length === 0) {
+                alert('Your cart is empty');
+            } else {
+                alert(`Cart contains ${cartItems.length} items`);
+            }
+        }
+
+        function shopNow() {
+            window.location.hash = '#shop';
+            alert('Redirecting to shop section...');
+        }
+
+        function navigateToCategory(category) {
+            alert(`Navigating to ${category} category`);
+            console.log(`Loading ${category} products...`);
+        }
+
+        function shopCategory(category) {
+            alert(`Shopping ${category} collection`);
+        }
+
+        function discoverDeals() {
+            alert('Discovering top deals...');
+        }
+
+        function discoverMasks() {
+            alert('Discovering face mask deals...');
+        }
+
+        function addToCart(productId) {
+            cartCount++;
+            cartItems.push(productId);
+            document.querySelector('.cart-badge').textContent = cartCount;
+            
+            const button = event.target;
+            const originalText = button.textContent;
+            button.textContent = 'Added!';
+            button.style.backgroundColor = '#388e3c';
+            button.style.color = 'white';
+            
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.style.backgroundColor = '#e2dfcf';
+                button.style.color = '#503217';
+            }, 2000);
+            
+            console.log(`Added ${productId} to cart. Total items: ${cartCount}`);
+        }
+
+        function subscribeNewsletter(event) {
+            event.preventDefault();
+            const email = event.target.querySelector('input[type="email"]').value;
+            
+            if (email) {
+                alert(`Thank you for subscribing with ${email}! You'll receive a 15% discount code shortly.`);
+                event.target.reset();
+            }
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        function showLoading(button) {
+            button.classList.add('loading');
+            const originalText = button.textContent;
+            button.textContent = 'Loading...';
+            
+            setTimeout(() => {
+                button.classList.remove('loading');
+                button.textContent = originalText;
+            }, 2000);
+        }
+
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('error', function() {
+                this.style.display = 'none';
+                console.log(`Failed to load image: ${this.src}`);
+            });
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                if (e.target.classList.contains('category-card') || e.target.classList.contains('product-card')) {
+                    e.target.click();
+                }
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Medifit homepage loaded successfully');
+            
+            const focusableElements = document.querySelectorAll('button, a, input, [tabindex]');
+            focusableElements.forEach(element => {
+                element.addEventListener('focus', function() {
+                    this.style.outline = '2px solid #503217';
+                    this.style.outlineOffset = '2px';
+                });
+                
+                element.addEventListener('blur', function() {
+                    this.style.outline = 'none';
+                });
+            });
+        });
+
+        function simulateApiCall(endpoint, data = null) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (Math.random() > 0.1) { // 90% success rate
+                        resolve({ success: true, data: data });
+                    } else {
+                        reject({ error: 'Network error occurred' });
+                    }
+                }, 1000 + Math.random() * 2000);
+            });
+        }
+
+        function updateCartDisplay() {
+            const badge = document.querySelector('.cart-badge');
+            badge.textContent = cartCount;
+            badge.style.display = cartCount > 0 ? 'flex' : 'none';
+        }
+
+        function searchProducts(query) {
+            console.log(`Searching for: ${query}`);
+            return new Promise(resolve => {
+                setTimeout(() => {
+                    resolve([
+                        { id: 1, name: 'Medicine A', price: '$25.00' },
+                        { id: 2, name: 'Health Product B', price: '$35.00' }
+                    ]);
+                }, 1000);
+            });
+        }
+
+        updateCartDisplay();
+    </script>
+    </div>
+</body>
+</html>

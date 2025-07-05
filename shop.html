@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medifit Shop</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-section">
+                <img src="assets/images/img_logo_2.svg" alt="Medifit Logo" class="logo" />
+                <h1 class="brand-name">Medifit</h1>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            
+            <div class="header-actions">
+                <img src="assets/images/img_search.svg" alt="Search" class="search-icon" onclick="toggleSearch()" />
+                <div class="cart-container">
+                    <img src="assets/images/img_cart.svg" alt="Cart" class="cart-icon" onclick="toggleCart()" />
+                    <span class="cart-badge">0</span>
+                </div>
+            </div>
+        </header>
+
+    <main>
+        <div class="product-display">
+  <div class="product-left">
+    <img src="shopimg/Rectangle 134.png" class="product-image" alt="Medifit bottle" />
+    <img src="shopimg/Rectangle 135.png" class="product-image" alt="Capsules" />
+  </div>
+
+  <div class="product-info">
+    <h1>B12 Medicine</h1>
+
+    <div class="product-price">
+      <span>$19.00 USD</span>
+      <span class="original-price">$25.00 USD</span>
+    </div>
+
+    <div class="quantity-section">
+      <input type="number" value="1" min="1" />
+      <button class="add-to-cart">
+  Add to Cart
+  <img src="shopimg/cart.png" alt="Cart Icon">
+</button>
+ </div>
+
+    <h2>Product Description</h2>
+    <p>
+      B12 Medicine is a premium supplement that combats B12 deficiency and supports energy, red blood cell formation, and nervous system health. Perfect for those with fatigue, anemia, or restricted diets like vegetarians and vegans.
+    </p>
+
+    <h3>Key Benefits:</h3>
+    <ul>
+      <li>Boosts energy levels.</li>
+      <li>Supports healthy brain function.</li>
+      <li>Promotes red blood cell production.</li>
+      <li>Aids in maintaining nerve health.</li>
+    </ul>
+  </div>
+</div>
+
+        <section class="feature-highlights">
+  <div class="feature-item">
+    <img src="aboutimg/truck-fast.png" alt="Free shipping">
+    <p>Free shipping</p>
+  </div>
+  <div class="feature-item">
+    <img src="aboutimg/Vector.png" alt="Easy refund">
+    <p>Easy refund</p>
+  </div>
+  <div class="feature-item">
+    <img src="aboutimg/headphone-mic.png" alt="Online support">
+    <p>Online support</p>
+  </div>
+  <div class="feature-item">
+    <img src="aboutimg/credit-card.png" alt="Flexible payment">
+    <p>Flexible payment</p>
+  </div>
+</section>
+<section class="customer-reviews">
+  <h1 class="review-title">Customers review</h1>
+  <div class="review-list">
+    <div class="review-item">
+      <div class="review-box">
+        <img class="emoji" src="shopimg/message-lines.svg" alt="Message Icon" />
+        <p class="review-text">
+          B12 Medicine keeps me energized and focused all day. A true lifesaver for vitality and wellness!
+        </p>
+      </div>
+      <div class="customer-info">
+        <img class="avatar" src="shopimg/Mask group.png" alt="Olivia Garcia" />
+        <span class="customer-name">Olivia Garcia</span>
+      </div>
+    </div>
+
+    <div class="review-item">
+      <div class="review-box">
+        <img class="emoji" src="shopimg/message-lines.svg" alt="Message Icon" />
+        <p class="review-text">
+          I’ve regained my energy and feel amazing thanks to B12 Medicine. Highly recommend for health and stamina!
+        </p>
+      </div>
+      <div class="customer-info">
+        <img class="avatar" src="shopimg/Mask group (1).png" alt="Sophia Brown" />
+        <span class="customer-name">Sophia Brown</span>
+      </div>
+    </div>
+
+    <div class="review-item">
+      <div class="review-box">
+        <img class="emoji" src="shopimg/message-lines.svg" alt="Message Icon" />
+        <p class="review-text">
+          As a vegetarian, B12 Medicine keeps my energy up and my health on track. Perfect for natural support!
+        </p>
+      </div>
+      <div class="customer-info">
+        <img class="avatar" src="shopimg/Mask group (2).png" alt="Ethan Harris" />
+        <span class="customer-name">Ethan Harris</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="recent-products">
+  <h2>Recent Products</h2>
+  <div class="product-grid">
+
+    <div class="product-card">
+      <div class="product-top">
+        <span class="badge">New</span>
+        <img src="shopimg/download 2.png" alt="Microscope">
+        <button class="shop-now">Shop now</button>
+      </div>
+      <h3>Microscope</h3>
+      <p class="price">$45.00 <span class="currency">USD</span></p>
+    </div>
+
+    <div class="product-card">
+      <div class="product-top">
+        <span class="badge discount">Save 10%</span>
+        <img src="shopimg/sleek-pulse-oximeter-with-soft-ambient-lighting.png" alt="Pulse oximeter">
+        <button class="shop-now">Shop now</button>
+      </div>
+      <h3>Pulse oximeter</h3>
+      <p class="price">
+        $19.00 <span class="currency">USD</span>
+        <span class="original-price">$25.00 USD</span>
+      </p>
+    </div>
+
+    <div class="product-card">
+      <div class="product-top">
+        <img src="shopimg/Group 161.png" alt="Vitamin serum">
+        <button class="shop-now">Shop now</button>
+      </div>
+      <h3>Vitamin serum</h3>
+      <p class="price">
+        $20.00 <span class="currency">USD</span>
+        <span class="original-price">$30.00 USD</span>
+      </p>
+    </div>
+
+    <div class="product-card">
+      <div class="product-top">
+        <span class="badge">New</span>
+        <img src="shopimg/Group 162.png" alt="High protein">
+        <button class="shop-now">Shop now</button>
+      </div>
+      <h3>High protein</h3>
+      <p class="price">$50.00 <span class="currency">USD</span></p>
+    </div>
+
+  </div>
+</section>
+<section class="community-section">
+  <center>
+    <img src="CTA.png" alt="Join our Medifit community">
+  </center>
+</section>
+
+
+  </main>
+ <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Pages</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#privacy">Privacy policy</a></li>
+                        <li><a href="#faqs">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Utility</h3>
+                    <ul>
+                        <li><a href="#style-guide">Style guide</a></li>
+                        <li><a href="#instruction">Instruction</a></li>
+                        <li><a href="#changelog">Changelog</a></li>
+                        <li><a href="#licenses">Licenses</a></li>
+                        <li><a href="#link-in-bio">Link in bio</a></li>
+                        <li><a href="#error-404">Error 404</a></li>
+                        <li><a href="#password-protected">Password protected</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <div class="footer-brand">
+                        <img src="assets/images/img_group_123.svg" alt="Medifit Logo" />
+                        <span class="footer-brand-name">Medifit</span>
+                    </div>
+                    
+                    <p class="footer-description">
+                        We provides the ultimate solution<br> for your online store and all the<br> healthcare needs.
+                    </p>
+                    
+                    <div class="social-links">
+                        <a href="#facebook" class="social-link">
+                            <img src="assets/images/img_facebook.svg" alt="Facebook" />
+                        </a>
+                        <a href="#instagram" class="social-link">
+                            <img src="assets/images/img_group_14.svg" alt="Instagram" />
+                        </a>
+                        <a href="#twitter" class="social-link">
+                            <img src="assets/images/img_x304twitter.svg" alt="Twitter" />
+                        </a>
+                        <a href="#youtube" class="social-link">
+                            <img src="assets/images/img_youtube.svg" alt="YouTube" />
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Address</h3>
+                    <div class="contact-info">
+                        <img src="assets/images/img_locationpin2.svg" alt="Location" />
+                        <span>1640 Parker Rd. Allentown, New Mexico 31134</span>
+                    </div>
+                    
+                    <h3 style="margin-top: 30px;">Contact</h3>
+                    <div class="contact-info">
+                        <img src="assets/images/img_fi11502423_gray_800.svg" alt="Email" />
+                        <span>hello@gmail.com</span>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <img src="assets/images/img_fi2198371.svg" alt="Phone" />
+                        <span>(209) 555-0104</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <p>Design By <a href="#webestica">Webestica</a>, Powered By <a href="#webflow">Webflow</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

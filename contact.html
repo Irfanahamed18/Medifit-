@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Medifit</title>
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+ <div class="container">
+        <header class="header">
+            <div class="logo-section">
+                <img src="assets/images/img_logo_2.svg" alt="Medifit Logo" class="logo" />
+                <h1 class="brand-name">Medifit</h1>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            
+            <div class="header-actions">
+                <img src="assets/images/img_search.svg" alt="Search" class="search-icon" onclick="toggleSearch()" />
+                <div class="cart-container">
+                    <img src="assets/images/img_cart.svg" alt="Cart" class="cart-icon" onclick="toggleCart()" />
+                    <span class="cart-badge">0</span>
+                </div>
+            </div>
+        </header>
+
+  <section class="contact-section">
+  <h1 class="contact-title">
+    Contact us <img src="contactimg/phone.png" alt="Phone Icon" />
+  </h1>
+  <p class="contact-subtitle">
+    Have questions or need support? Get in touch with our team - we're here to help!
+  </p>
+
+  <form class="contact-form">
+    <div class="form-row">
+      <div class="form-group">
+        <label for="name">Full name</label>
+        <div class="input-wrapper">
+          <img src="contactimg/user.png" alt="User Icon" />
+          <input type="text" id="name" name="name" required />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <div class="input-wrapper">
+          <img src="contactimg/envelope.png" alt="Email Icon" />
+          <input type="email" id="email" name="email" required />
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="phone">Phone number</label>
+        <div class="input-wrapper">
+          <img src="contactimg/phone1.png" alt="Phone Icon" />
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="schedule">Schedule to receive call</label>
+        <div class="input-wrapper">
+          <img src="contactimg/clock.png" alt="Clock Icon" />
+          <input type="text" id="schedule" name="schedule" />
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group full-width">
+      <label for="message">Message</label>
+      <div class="input-wrapper large">
+        <img src="contactimg/pen-to-square.png" alt="Message Icon" />
+        <textarea id="message" name="message" rows="8"></textarea>
+      </div>
+    </div>
+
+    <button type="submit" class="submit-btn">
+      Submit <img src="contactimg/hand-pointer.png" alt="Submit Icon" />
+    </button>
+  </form>
+</section>
+
+
+     <section class="faq-section">
+  <div class="faq-left">
+    <h2>
+      Frequently Asked <br />
+      Questions
+      <img src="contactimg/question-circle.png" class="faq-icon" />
+    </h2>
+  </div>
+
+  <div class="faq-right">
+    <div class="faq-box open">
+      <div class="faq-header">
+        <img src="contactimg/medical-plus.png" alt="Close" />
+        <h3>What products do you offer?</h3>
+      </div>
+      <p>
+        We offer a wide range of medical supplies, including prescription medications,
+        over-the-counter products, supplements, and personal care items.
+      </p>
+    </div>
+
+    <div class="faq-box">
+      <div class="faq-header">
+        <img src="contactimg/Vector.png" alt="Plus" />
+        <h3>How can I place an order?</h3>
+      </div>
+    </div>
+
+    <div class="faq-box">
+      <div class="faq-header">
+        <img src="contactimg/Vector.png" alt="Plus" />
+        <h3>Do you provide home delivery?</h3>
+      </div>
+    </div>
+
+    <div class="faq-box">
+      <div class="faq-header">
+        <img src="contactimg/Vector.png" alt="Plus" />
+        <h3>Can I return or exchange products?</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section>
+    <center>
+    <img src="CTA.png"/>
+    </center>
+  </section>
+
+
+  <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Pages</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#privacy">Privacy policy</a></li>
+                        <li><a href="#faqs">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Utility</h3>
+                    <ul>
+                        <li><a href="#style-guide">Style guide</a></li>
+                        <li><a href="#instruction">Instruction</a></li>
+                        <li><a href="#changelog">Changelog</a></li>
+                        <li><a href="#licenses">Licenses</a></li>
+                        <li><a href="#link-in-bio">Link in bio</a></li>
+                        <li><a href="#error-404">Error 404</a></li>
+                        <li><a href="#password-protected">Password protected</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <div class="footer-brand">
+                        <img src="assets/images/img_group_123.svg" alt="Medifit Logo" />
+                        <span class="footer-brand-name">Medifit</span>
+                    </div>
+                    
+                    <p class="footer-description">
+                        We provides the ultimate solution<br> for your online store and all the<br> healthcare needs.
+                    </p>
+                    
+                    <div class="social-links">
+                        <a href="#facebook" class="social-link">
+                            <img src="assets/images/img_facebook.svg" alt="Facebook" />
+                        </a>
+                        <a href="#instagram" class="social-link">
+                            <img src="assets/images/img_group_14.svg" alt="Instagram" />
+                        </a>
+                        <a href="#twitter" class="social-link">
+                            <img src="assets/images/img_x304twitter.svg" alt="Twitter" />
+                        </a>
+                        <a href="#youtube" class="social-link">
+                            <img src="assets/images/img_youtube.svg" alt="YouTube" />
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Address</h3>
+                    <div class="contact-info">
+                        <img src="assets/images/img_locationpin2.svg" alt="Location" />
+                        <span>1640 Parker Rd. Allentown, New Mexico 31134</span>
+                    </div>
+                    
+                    <h3 style="margin-top: 30px;">Contact</h3>
+                    <div class="contact-info">
+                        <img src="assets/images/img_fi11502423_gray_800.svg" alt="Email" />
+                        <span>hello@gmail.com</span>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <img src="assets/images/img_fi2198371.svg" alt="Phone" />
+                        <span>(209) 555-0104</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <p>Design By <a href="#webestica">Webestica</a>, Powered By <a href="#webflow">Webflow</a></p>
+            </div>
+        </footer>
+</body>
+</html>
